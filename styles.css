@@ -471,7 +471,7 @@ body{
 }
 .horizontal-line-wrapper2{
     background: var(--white);
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 .horizontal-line2{
     margin: 0px 70px;
