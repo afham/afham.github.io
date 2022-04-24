@@ -1098,6 +1098,7 @@ input:not(:placeholder-shown) + label {
     .form{
         max-width: max-content;
        width: 90%;
+       margin-top: 40px;
     }
     .form-title{
         margin-bottom: 0px;
