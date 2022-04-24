@@ -32,14 +32,12 @@
             </div>
         </div>
         <div id="navbar" class="navbar">
-            <a class="nav-links" href="#banner-section" >Home</a>
-            <a class="nav-links" href="#our-service-section" >Our Services</a>
-            <a class="nav-links">Why Choose Us</a>
-            <a class="nav-links">CBM Calculator</a>
-            <a class="nav-links">Track Order</a>
-            <a class="nav-links">Gallery</a>
-            <a class="nav-links">Careers</a>
-            <a class="nav-links">Contact</a>
+            <a class="nav-links" id="home" onclick="scrollToView(this)">Home</a>
+            <a class="nav-links" id="our-services" onclick="scrollToView(this)" >Our Services</a>
+            <a class="nav-links" id="cbm-calculator" onclick="scrollToView(this)">CBM Calculator</a>
+            <a class="nav-links" id="our-process" onclick="scrollToView(this)">Our Process</a>
+            <a class="nav-links" id="why-choose-us" onclick="scrollToView(this)">Why Choose Us</a>
+            <a class="nav-links">Testinomials</a>
         </div>    
     </div>
     <div class="banner-section" id="banner-section">
@@ -52,7 +50,7 @@
                 <!-- YOUR VALUABLE BELONGINGS MOVED WITH LOVE AND CARE -->
             </div>
             <div class="banner-btn-group">
-                <button class="banner-primary-btn" onclick="openQuotePopup(this)">Request a Quote</button>
+                <button class="banner-primary-btn" id="quote-button" onclick="openQuotePopup(this)">Request a Quote</button>
                 <a href="https://www.youtube.com/watch?v=VefDCbvoKJk" class="popup-youtube banner-secondary-btn">About us<span><img src="./images/play.svg"/></span></a>
             </div>
         </div>
@@ -61,10 +59,10 @@
             <img class="banner-img2" src="./images/ring.png">
         </div>
     </div>
-    <div class="horizontal-line-wrapper"  id="our-service-section">
+    <div class="horizontal-line-wrapper">
         <div class="horizontal-line"></div>
     </div>
-    <div class="our-service-section">
+    <div class="our-service-section" >
         <div class="section-title">
             OUR SERVICES
         </div>
@@ -76,7 +74,7 @@
                     <p class="card-title">AIR FREIGHT</p>
                     <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <button class="card-button">Read More ></button>
+                <button class="card-button" id ="airfreight-btn" onclick="openQuotePopup(this)">Read More ></button>
             </div>
             <div class="card">
                 <div class="card-icon-circle"></div>
@@ -85,7 +83,7 @@
                     <p class="card-title">SEA FREIGHT</p>
                     <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <button class="card-button">Read More ></button>
+                <button class="card-button" id ="seafreight-btn" onclick="openQuotePopup(this)">Read More ></button>
             </div>
             <div class="card">
                 <div class="card-icon-circle"></div>
@@ -94,7 +92,7 @@
                     <p class="card-title">TRANSPORTATION</p>
                     <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <button class="card-button">Read More ></button>
+                <button class="card-button" id ="transportation-btn" onclick="openQuotePopup(this)">Read More ></button>
             </div>
             <div class="card">
                 <div class="card-icon-circle"></div>
@@ -103,7 +101,7 @@
                     <p class="card-title">RELOCATIONS</p>
                     <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <button class="card-button">Read More ></button>
+                <button class="card-button" id ="relocations-btn" onclick="openQuotePopup(this)">Read More ></button>
             </div>
             <div class="card">
                 <div class="card-icon-circle"></div>
@@ -112,7 +110,7 @@
                     <p class="card-title">PACKING, CRATING AND LASHING</p>
                     <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <button class="card-button">Read More ></button>
+                <button class="card-button" id ="packing-btn" onclick="openQuotePopup(this)">Read More ></button>
             </div>
             <div class="card">
                 <div class="card-icon-circle"></div>
@@ -121,7 +119,7 @@
                     <p class="card-title">GLOBAL LCL CONSOLIDATION</p>
                     <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <button class="card-button">Read More ></button>
+                <button class="card-button" id ="lcl-btn" onclick="openQuotePopup(this)">Read More ></button>
             </div>
             <div class="card">
                 <div class="card-icon-circle"></div>
@@ -130,7 +128,7 @@
                     <p class="card-title">CUSTOMS CLEARANCE</p>
                     <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <button class="card-button">Read More ></button>
+                <button class="card-button" id ="customs-btn" onclick="openQuotePopup(this)">Read More ></button>
             </div>
             <div class="card">
                 <div class="card-icon-circle"></div>
@@ -139,14 +137,14 @@
                     <p class="card-title">LUXURY CAR RELOCATION</p>
                     <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <button class="card-button">Read More ></button>
+                <button class="card-button" id ="luxury-btn" onclick="openQuotePopup(this)">Read More ></button>
             </div>
         </div>
     </div>
     <div class="horizontal-line-wrapper2">
         <div class="horizontal-line2"></div>
     </div>
-    <div class="cbm-section">
+    <div class="cbm-section" >
         <div class="cbm-inner">
             <div class="cbm-title">
                 CBM CALCULATOR
@@ -247,12 +245,48 @@
         <div class="section-title">
             WHY CHOOSE US
         </div>
+        <div class="wcs-content">
+            <div class="wcs-left">
+                <div class="wcs-item">
+
+                </div>
+                <div class="wcs-item">item</div>
+                <div class="wcs-item">item</div>
+                <div class="wcs-item">item</div>
+            </div>
+            <div class="wcs-right">
+                <img  class="wcs-img" src="./images/theguy.png" />
+                <img  class="wcs-img2" src="./images/square2.png" />
+            </div>
+        </div>    
     </div>
 
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="quote-popup" class="quote-popup">
-        <form id="form" class="form"> 
-            <button class="close-button" onclick="closeQuotePopup(event)">X</button>  
+        <form id="quote-form" class="form" style="display: none;"> 
+            <button id="quote-clsbtn" class="close-button"  type="button"  onclick="closeQuotePopup(this)">X</button>  
             <div class="form-title">Request for a <span style="color: var(--blue);">FREE</span> Quote .</div> 
             <div class="material-textfield">
                 <input placeholder=" " type="text">
@@ -302,6 +336,102 @@
                 <label>Other Details</label>
             </div>
             <button class="submit-button" >Submit Your Request</button>    
+        </form>
+        <!-- ---------------airfreigth--------------- -->
+        <form id="airfreight" class="form" style="display: none;"> 
+            <button id="airfreight-clsbtn"  class="close-button"  type="button"  onclick="closeQuotePopup(this)">X</button>  
+            <div class="form-title"><span style="color: var(--blue);">AIR FREIGHT</span></div> 
+            <div class="service-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ea in eos fugiat nihil, quod magnam, deserunt doloremque quaerat labore 
+                qui mollitia facilis esse omnis reiciendis voluptate, dolor laboriosam nemo asperiores maiores quos accusamus pariatur. Soluta dignissimos 
+                totam voluptatibus labore, enim expedita laboriosam tenetur? Ut natus sapiente voluptatibus maiores facilis rerum doloribus, sequi repellat 
+                fuga quos iste tenetur aspernatur minima, tempore nam itaque distinctio a eaque deleniti quae. Eaque, laborum laboriosam. Dolore rem minus 
+                nobis veniam fugit eius, vitae corrupti?
+            </div>
+        </form>
+        <!-- ---------------seafreigth--------------- -->
+        <form id="seafreight" class="form" style="display: none;"> 
+            <button id="seafreight-clsbtn"  class="close-button"  type="button"  onclick="closeQuotePopup(this)">X</button>  
+            <div class="form-title"><span style="color: var(--blue);">SEA FREIGHT</span></div> 
+            <div  class="service-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ea in eos fugiat nihil, quod magnam, deserunt doloremque quaerat labore 
+                qui mollitia facilis esse omnis reiciendis voluptate, dolor laboriosam nemo asperiores maiores quos accusamus pariatur. Soluta dignissimos 
+                totam voluptatibus labore, enim expedita laboriosam tenetur? Ut natus sapiente voluptatibus maiores facilis rerum doloribus, sequi repellat 
+                fuga quos iste tenetur aspernatur minima, tempore nam itaque distinctio a eaque deleniti quae. Eaque, laborum laboriosam. Dolore rem minus 
+                nobis veniam fugit eius, vitae corrupti?
+            </div>
+        </form>
+        <!-- ---------------transportation--------------- -->
+        <form id="transportation" class="form" style="display: none;"> 
+            <button id="transportation-clsbtn"  class="close-button"  type="button"  onclick="closeQuotePopup(this)">X</button>  
+            <div class="form-title"><span style="color: var(--blue);">TRANSPORTATION</span></div> 
+            <div  class="service-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ea in eos fugiat nihil, quod magnam, deserunt doloremque quaerat labore 
+                qui mollitia facilis esse omnis reiciendis voluptate, dolor laboriosam nemo asperiores maiores quos accusamus pariatur. Soluta dignissimos 
+                totam voluptatibus labore, enim expedita laboriosam tenetur? Ut natus sapiente voluptatibus maiores facilis rerum doloribus, sequi repellat 
+                fuga quos iste tenetur aspernatur minima, tempore nam itaque distinctio a eaque deleniti quae. Eaque, laborum laboriosam. Dolore rem minus 
+                nobis veniam fugit eius, vitae corrupti?
+            </div>
+        </form>
+         <!-- ---------------relocations--------------- -->
+         <form id="relocations" class="form" style="display: none;"> 
+            <button id="relocations-clsbtn"  class="close-button"  type="button"  onclick="closeQuotePopup(this)">X</button>  
+            <div class="form-title"><span style="color: var(--blue);">RELOCATIONS</span></div> 
+            <div  class="service-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ea in eos fugiat nihil, quod magnam, deserunt doloremque quaerat labore 
+                qui mollitia facilis esse omnis reiciendis voluptate, dolor laboriosam nemo asperiores maiores quos accusamus pariatur. Soluta dignissimos 
+                totam voluptatibus labore, enim expedita laboriosam tenetur? Ut natus sapiente voluptatibus maiores facilis rerum doloribus, sequi repellat 
+                fuga quos iste tenetur aspernatur minima, tempore nam itaque distinctio a eaque deleniti quae. Eaque, laborum laboriosam. Dolore rem minus 
+                nobis veniam fugit eius, vitae corrupti?
+            </div>
+        </form>
+         <!-- ---------------packing--------------- -->
+         <form id="packing" class="form" style="display: none;"> 
+            <button id="packing-clsbtn"  class="close-button"  type="button"   onclick="closeQuotePopup(this)">X</button>  
+            <div class="form-title"><span style="color: var(--blue);">PACKING , CRATING AND LASHING</span></div> 
+            <div  class="service-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ea in eos fugiat nihil, quod magnam, deserunt doloremque quaerat labore 
+                qui mollitia facilis esse omnis reiciendis voluptate, dolor laboriosam nemo asperiores maiores quos accusamus pariatur. Soluta dignissimos 
+                totam voluptatibus labore, enim expedita laboriosam tenetur? Ut natus sapiente voluptatibus maiores facilis rerum doloribus, sequi repellat 
+                fuga quos iste tenetur aspernatur minima, tempore nam itaque distinctio a eaque deleniti quae. Eaque, laborum laboriosam. Dolore rem minus 
+                nobis veniam fugit eius, vitae corrupti?
+            </div>
+        </form>
+         <!-- ---------------lcl--------------- -->
+         <form id="lcl" class="form" style="display: none;"> 
+            <button id="lcl-clsbtn"  class="close-button"  type="button"   onclick="closeQuotePopup(this)">X</button>  
+            <div class="form-title"><span style="color: var(--blue);">LCL GLOBAL CONSOLIDATION</span></div> 
+            <div  class="service-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ea in eos fugiat nihil, quod magnam, deserunt doloremque quaerat labore 
+                qui mollitia facilis esse omnis reiciendis voluptate, dolor laboriosam nemo asperiores maiores quos accusamus pariatur. Soluta dignissimos 
+                totam voluptatibus labore, enim expedita laboriosam tenetur? Ut natus sapiente voluptatibus maiores facilis rerum doloribus, sequi repellat 
+                fuga quos iste tenetur aspernatur minima, tempore nam itaque distinctio a eaque deleniti quae. Eaque, laborum laboriosam. Dolore rem minus 
+                nobis veniam fugit eius, vitae corrupti?
+            </div>
+        </form>
+         <!-- ---------------customs--------------- -->
+         <form id="customs" class="form" style="display: none;"> 
+            <button id="customs-clsbtn"  class="close-button"  type="button"   onclick="closeQuotePopup(this)">X</button>  
+            <div class="form-title"><span style="color: var(--blue);">CUSTOMS CLEARANCE</span></div> 
+            <div  class="service-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ea in eos fugiat nihil, quod magnam, deserunt doloremque quaerat labore 
+                qui mollitia facilis esse omnis reiciendis voluptate, dolor laboriosam nemo asperiores maiores quos accusamus pariatur. Soluta dignissimos 
+                totam voluptatibus labore, enim expedita laboriosam tenetur? Ut natus sapiente voluptatibus maiores facilis rerum doloribus, sequi repellat 
+                fuga quos iste tenetur aspernatur minima, tempore nam itaque distinctio a eaque deleniti quae. Eaque, laborum laboriosam. Dolore rem minus 
+                nobis veniam fugit eius, vitae corrupti?
+            </div>
+        </form>
+         <!-- ---------------luxury--------------- -->
+         <form id="luxury" class="form" style="display: none;"> 
+            <button id="luxury-clsbtn"  class="close-button"  type="button"   onclick="closeQuotePopup(this)">X</button>  
+            <div class="form-title"><span style="color: var(--blue);">LUXURY RELOCATIONS</span></div> 
+            <div  class="service-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ea in eos fugiat nihil, quod magnam, deserunt doloremque quaerat labore 
+                qui mollitia facilis esse omnis reiciendis voluptate, dolor laboriosam nemo asperiores maiores quos accusamus pariatur. Soluta dignissimos 
+                totam voluptatibus labore, enim expedita laboriosam tenetur? Ut natus sapiente voluptatibus maiores facilis rerum doloribus, sequi repellat 
+                fuga quos iste tenetur aspernatur minima, tempore nam itaque distinctio a eaque deleniti quae. Eaque, laborum laboriosam. Dolore rem minus 
+                nobis veniam fugit eius, vitae corrupti?
+            </div>
         </form>
     </div>
 
