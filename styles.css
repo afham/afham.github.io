@@ -1098,10 +1098,13 @@ input:not(:placeholder-shown) + label {
     .form{
         max-width: max-content;
        width: 90%;
-       margin-top: 40px;
+       gap: 12px;
     }
     .form-title{
         margin-bottom: 0px;
         font-size: 20px;
+    }
+    .textarea{
+        margin: 0 40px;
     }
 }
